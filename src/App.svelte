@@ -1,11 +1,12 @@
 <script>
+  import './styles.scss'
   import QuizArea from './QuizArea.svelte'
   let playerScore = 0
   let visible = true
 </script>
 
 <main>
-	<h1>Ultimate Trivia!</h1>
+	<h1 class="title is-1 has-text-primary">Ultimate Trivia!</h1>
 	<QuizArea></QuizArea>
   <div class="footer">
     Trivia Quiz App built with <a href="https://svelte.dev" target="_blank">Svelte</a> by <strong>Angelo Anolin</strong>.
@@ -20,23 +21,23 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	/* h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 2em;
     font-weight: 100;
     padding-bottom: 12px;
     margin-bottom: 12px;
-	}
+	} */
 
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
     }
     
-    h1 {
+    /* h1 {
       font-size: 4em;
-    }
+    } */
 	}
 
   .footer {

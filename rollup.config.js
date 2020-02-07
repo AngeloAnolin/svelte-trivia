@@ -4,6 +4,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
+// For Bulma
+import postcss from 'rollup-plugin-postcss'
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -22,8 +25,11 @@ export default {
 			// a separate file — better for performance
 			css: css => {
 				css.write('public/build/bundle.css');
-			}
-		}),
+      }
+    }),
+    
+    // For Bulma
+    postcss(),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
@@ -50,7 +56,7 @@ export default {
 	],
 	watch: {
 		clearScreen: false
-	}
+  }
 };
 
 function serve() {

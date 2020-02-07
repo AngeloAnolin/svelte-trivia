@@ -126,8 +126,6 @@
   $: isQuestionNoEqualToNumberOfQuestions = (questionNo === numberOfQuestions);
 
   let correct = false;
-  
-  $: score = 0;
 
   // Fetch Data
   function fetchData () {
@@ -174,12 +172,12 @@
 
       dispatch('resultsScreen', { showScore: false });
 
-      if (score < 5) {
+      if (score < 1) {
         finalMessage = 'You need to brush up your skills!';
-      } else if (score === 5) {
+      } else if (score === 3) {
         finalMessage = "Good try but you can do better!";
       } else {
-        finalMessage = "Great job!";
+        finalMessage = "Great Job!";
       }
     }
   }
@@ -236,6 +234,7 @@
     questionNo = 0;
     resultsScreen = false;
     navigationButtonsVisibility = true;
+    score = 0;
   }
 
 </script>

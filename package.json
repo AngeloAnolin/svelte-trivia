@@ -16,6 +16,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.1",
+    "rollup-plugin-postcss": "^2.0.6",
     "sirv-cli": "^0.4.4"
   }
 }
