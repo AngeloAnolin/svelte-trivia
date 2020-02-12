@@ -1,27 +1,17 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Svelte Trivia App
 
----
+[Svelte](https://svelte.dev) Application with [Bulma](https://bulma.io) for styling.
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+Live Version: [https://angelo-trivia-app-with-svelte.surge.sh/](https://angelo-trivia-app-with-svelte.surge.sh/)
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
 
 ## Get started
 
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd svelte-trivia
 npm install
 ```
 

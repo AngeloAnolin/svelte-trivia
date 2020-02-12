@@ -31,10 +31,6 @@
 		main {
 			max-width: none;
     }
-    
-    /* h1 {
-      font-size: 4em;
-    } */
 	}
 
   .container-expand {
