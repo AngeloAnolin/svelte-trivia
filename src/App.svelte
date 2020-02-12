@@ -6,29 +6,26 @@
 </script>
 
 <main>
-	<h1 class="title is-1 has-text-primary">Ultimate Trivia!</h1>
-	<QuizArea></QuizArea>
-  <div class="footer">
-    Trivia Quiz App built with <a href="https://svelte.dev" target="_blank">Svelte</a> by <strong>Angelo Anolin</strong>.
+  <div class="container is-fluid">
+    <div class="container-expand">
+      <h1 class="title is-1 has-text-info header">Ultimate Trivia!</h1>
+      
+      <QuizArea></QuizArea>
+    </div>
   </div>
+
+  <footer class="has-background-light footerCss">
+    <div class="container is-fluid" style="padding-top: 20px;">
+      Trivia Quiz App built with <a href="https://svelte.dev" target="_blank">Svelte</a> and <a href="https://bulma.io" target="_blank">Bulma</a> by <strong>Angelo Anolin</strong>.
+    </div>
+  </footer>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	/* h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 2em;
-    font-weight: 100;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-	} */
+  .header {
+    padding-top: 20px;
+    text-align: center;
+  }
 
 	@media (min-width: 640px) {
 		main {
@@ -40,13 +37,12 @@
     } */
 	}
 
-  .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
+  .container-expand {
+    min-height: calc(100vh - 70px);
+  }
+
+  .footerCss {
+    padding-top: 12px;
+    height: 70px;
   }
 </style>
