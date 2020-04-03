@@ -88,13 +88,13 @@
             {#if navigationButtonsVisibility}
               <div class="field is-grouped">
                 {#if (questionNo > 0)}
-                  <button class="button is-normal is-info is-medium is-outlined is-fullwidth" value="Back" on:click="{() => handleClick('b')}">
+                  <button class="button is-normal is-info is-medium is-outlined is-fullwidth button-navigation" value="Back" on:click="{() => handleClick('b')}">
                     Previous
                   </button>
                 {/if}
 
                 {#if (questionNo < (numberOfQuestions - 1))}
-                  <button class="button is-normal is-link is-medium is-outlined is-fullwidth" value="Next" on:click="{() => handleClick('f')}">
+                  <button class="button is-normal is-link is-medium is-outlined is-fullwidth button-navigation" value="Next" on:click="{() => handleClick('f')}">
                     Next
                   </button>
                 {/if}
@@ -249,16 +249,16 @@
     let className = '';
     switch (item) {
       case 'easy':
-        className = 'notification is-success has-text-centered';
+        className = 'box has-background-success has-text-centered';
         break;
       case 'medium':
-        className = 'notification is-warning has-text-centered';
+        className = 'box has-background-warning has-text-centered';
         break;
       case 'hard':
-        className = 'notification is-danger has-text-centered';
+        className = 'box has-background-danger has-text-centered';
         break;
       case 'difficult':
-        className = 'notification is-dark has-text-centered';
+        className = 'box has-background-dark has-text-centered';
         break;
     }
 
@@ -306,6 +306,11 @@
 
   button:hover {
     box-shadow: 0 0 5px darkslateblue;
+  }
+
+  .button-navigation {
+    width: 120px !important;
+    margin-bottom: 20px;
   }
 
   .choice-text {

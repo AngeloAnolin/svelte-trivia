@@ -40,5 +40,6 @@
   .footerCss {
     padding-top: 12px;
     height: 70px;
+    margin-top: 12px;
   }
 </style>
