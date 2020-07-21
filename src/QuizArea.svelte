@@ -7,7 +7,7 @@
           <div class="columns is-multiline">
             <div class="column is-12">
               <span class="title is-3">
-                Question No. { questionNo + 1}
+                Question # { questionNo + 1}
               </span>
             </div>
             <div class="column is-12">
@@ -249,16 +249,16 @@
     let className = '';
     switch (item) {
       case 'easy':
-        className = 'box has-background-success has-text-centered';
+        className = 'box is-success has-text-centered';
         break;
       case 'medium':
-        className = 'box has-background-warning has-text-centered';
+        className = 'box is-warning has-text-centered';
         break;
       case 'hard':
-        className = 'box has-background-danger has-text-centered';
+        className = 'box is-danger has-text-centered';
         break;
       case 'difficult':
-        className = 'box has-background-dark has-text-centered';
+        className = 'box is-dark has-text-centered';
         break;
     }
 
